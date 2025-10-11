@@ -1,0 +1,58 @@
+# ===============================================
+# GERAIS: Arquivos de Projeto/Build
+# ===============================================
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.log
+/target/             # Diretório de build do Maven/Gradle
+/build/              # Diretório de build do Gradle
+
+# ===============================================
+# DEPENDÊNCIAS DO MAVEN (Pode ser ignorado com /target, mas é bom ter)
+# ===============================================
+# Logs de testes e relatórios
+/surefire-reports/
+
+# ===============================================
+# ECLIPSE / SPRING TOOL SUITE (STS)
+# ===============================================
+.metadata             # Diretório de metadados da Workspace
+.project              # Arquivo de configuração de projeto (contém paths locais)
+.classpath            # Arquivo de classpath
+.settings/            # Diretório de configurações específicas do IDE
+.factorypath          # Arquivo do STS
+# Arquivos de log e history do Eclipse
+.snap
+.sts4
+
+# ===============================================
+# INTELLIJ IDEA
+# ===============================================
+.idea/                # Diretório de configuração do IntelliJ
+*.iml                 # Arquivos de módulo (IML)
+*.iws
+*.ipr
+/out/                 # Diretório de compilação do IntelliJ
+
+# ===============================================
+# OUTROS
+# ===============================================
+# Arquivos gerados pelo SO
+.DS_Store             # macOS
+Thumbs.db             # Windows
+
+# ===============================================
+# VARIÁVEIS DE AMBIENTE E SECRETS
+# ===============================================
+# Arquivos de propriedade/YAML que contêm credenciais de acesso
+# Adapte estes nomes conforme seu projeto Spring Boot:
+/src/main/resources/*.properties
+/src/main/resources/*.yml
+!/src/main/resources/application.properties  # Manter a versão vazia/template
+!/src/main/resources/application.yml         # Manter a versão vazia/template
+application*.properties
+application*.yml
