@@ -56,3 +56,10 @@ Thumbs.db             # Windows
 !/src/main/resources/application.yml         # Manter a versão vazia/template
 application*.properties
 application*.yml
+.classpath
+.project
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+target/classes/META-INF/MANIFEST.MF
