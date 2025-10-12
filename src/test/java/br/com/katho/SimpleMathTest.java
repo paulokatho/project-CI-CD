@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -189,7 +188,18 @@ public class SimpleMathTest {
 		assertEquals(expected, total);
 		assertNotNull(total);
 		assertNotEquals(expectedNotEqual, total);
-	}	
+	}
+	
+	@Test
+	void testSquareRootWithAssertionMessage() {		
+		Double number = 81D;
+		Double expected = 9D;
+		
+		Double actual = math.squareRoot(number);
+		
+		assertEquals(expected, actual,
+				() -> "Square Root of " + number + "did not produce" + "!");
+	}
 	// FIM TESTE SQUARE
 }	
 	
