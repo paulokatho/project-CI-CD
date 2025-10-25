@@ -7,7 +7,7 @@
 *.ear
 *.zip
 *.tar
-*.log
+*.log 
 /target/             # Diretório de build do Maven/Gradle
 /build/              # Diretório de build do Gradle
 
@@ -64,4 +64,3 @@ application*.yml
 .settings/org.eclipse.m2e.core.prefs
 target/classes/META-INF/MANIFEST.MF
 target/classes/META-INF/maven/br.com.katho/project-ci-cd/pom.properties
-target/classes/META-INF/maven/br.com.katho/project-ci-cd/pom.xml
